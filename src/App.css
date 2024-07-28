@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+
+  color: black;
+  font-family: Avenir;
 }
 
-.App-link {
-  color: #61dafb;
+.main-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  padding: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.quiz-container {
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  min-height: 400px;
+  min-width: 550px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 20px;
+  padding: 0 30px;
+}
+
+.question {
+  margin-bottom: 70px;
+}
+
+.see-answer {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  color: black;
+  height: 50px;
+  width: 60%;
+  background-color: white;
+  font-size: 18px;
+  border-style: none;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.answers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.ans-btn {
+  color: black;
+  background-color: #94bce9a0;
+  margin-top: 10px;
+  height: 50px;
+  width: 295px;
+  border-radius: 4px;
+  font-size: 18px;
+  border-style: none;
+}
+
+@media (max-width: 615px) {
+  .ans-btn {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 616px) {
+  .ans-btn {
+    width: 295px;
   }
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 180px;
+
+  color: black;
+  border-radius: 15px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.more-info {
+  min-height: 30px;
+  width: 600px;
+  background-color: #94bbe9;
+  margin-top: 10px;
+
+  padding: 10px;
+}
+
+.username {
+  height: 30px;
+  width: 300px;
+}
+
+.password {
+  height: 30px;
+  width: 300px;
+}
+
+.log-in-button {
+  height: 35px;
+  width: 70px;
+}
+
+.log-in-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 4px;
+}
+
+.input {
+  height: 30px;
+  padding: 10px;
+  width: 300px;
+  margin: 10px;
+  border: none;
+  background-color: #e5e4e2;
+  border-radius: 4px;
+}
+
+.log-in-button {
+  border-radius: 4px;
+  height: 45px;
+  width: 320px;
+  border: none;
+  margin: 10px;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.pw-user-error {
+  color: red;
+}
+
+.hover-link {
+  color: #94bbe9;
+}
+.hover-link:hover {
+  color: #eeaeca;
+}
+
+.sign-up-main-container {
+  border-radius: 4px;
+  background-color: white;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.next-question {
+  margin-top: 15px;
+  font-size: 18px;
 }
